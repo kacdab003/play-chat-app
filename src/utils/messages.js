@@ -3,9 +3,9 @@ const generateMessage = (username, text) => ({
         text,
         createdAt: new Date().getTime(),
 });
-const generateLocationMessage = (username, locationURL) => ({
+const generateLocationMessage = (username, url) => ({
         username,
-        locationURL,
+        url,
         createdAt: new Date().getTime(),
 });
 module.exports = {
