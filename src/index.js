@@ -16,7 +16,7 @@ const publicDirectoryPath = path.join(__dirname, '../public');
 app.use(express.static(publicDirectoryPath));
 
 io.on('connection', socket => {
-        console.log('New WebSocket connection');
+        // console.log('New WebSocket connection');
 
         socket.on('sendMessage', (message, callback) => {
                 const filter = new Filter();
@@ -68,5 +68,5 @@ io.on('connection', socket => {
 });
 
 server.listen(port, () => {
-        console.log(`Server is up on port ${port}!`);
+        // console.log(`Server is up on port ${port}!`);
 });
